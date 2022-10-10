@@ -1099,24 +1099,12 @@ components:
           type: integer
         availableBedsForToday:
           type: integer
-        probationRegion:
-          type: string
-          format: uuid
-        apArea:
-          type: string
-          format: uuid
-        localAuthorityArea:
-          type: string
-          format: uuid
       required:
         - name
         - apCode
         - postcode
         - bedCount
         - availableBedsForToday
-        - probationRegion
-        - apArea
-        - localAuthorityArea
     LocalAuthorityArea:
       type: object
       properties:
