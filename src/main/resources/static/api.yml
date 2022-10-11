@@ -1097,14 +1097,11 @@ components:
           type: string
         bedCount:
           type: integer
-        availableBedsForToday:
-          type: integer
       required:
         - name
         - apCode
         - postcode
         - bedCount
-        - availableBedsForToday
     LocalAuthorityArea:
       type: object
       properties:

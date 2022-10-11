@@ -99,7 +99,7 @@ class PremisesService(
 
     /**
      * Start of setting up some dummy data to spike the implementation.
-     * This will be removed once it's established how to dynamically get this data
+     * TODO: This will be removed once it's established how to dynamically get this data
      */
     val apAreaEntity = ApAreaEntity(
       id = UUID.randomUUID(),
@@ -109,14 +109,14 @@ class PremisesService(
     )
 
     val probationRegion = ProbationRegionEntity(
-      id = UUID.fromString("afee0696-8df3-4d9f-9d0c-268f17772e2c"), // Wales in db table
+      id = UUID.fromString("afee0696-8df3-4d9f-9d0c-268f17772e2c"), // Wales in db
       name = "arbitrary_probation_region",
       apArea = apAreaEntity,
       premises = mutableListOf()
     )
 
     val localAuthorityArea = LocalAuthorityAreaEntity(
-      id = UUID.fromString("7de4177b-9177-4c28-9bb6-5f5292619546"), // Cardiff in db table
+      id = UUID.fromString("7de4177b-9177-4c28-9bb6-5f5292619546"), // Cardiff in db
       identifier = "arbitrary_identifier",
       name = "arbitrary_local_authority_area",
       premises = mutableListOf()
