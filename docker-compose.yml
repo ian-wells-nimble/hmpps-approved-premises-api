@@ -14,7 +14,6 @@ services:
 
   hmpps-auth:
     image: quay.io/hmpps/hmpps-auth:latest
-    container_name: hmpps-auth
     ports:
       - "9091:8080"
     healthcheck:
@@ -53,7 +52,6 @@ services:
 
   wiremock:
     image: rodolpheche/wiremock
-    container_name: wiremock
     ports:
       - "9004:8080"
     volumes:
@@ -81,7 +79,7 @@ services:
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
-      - "6379:6379"
+      - "6380:6379"
 
 volumes:
   database-data-development:
